@@ -13,7 +13,7 @@ class LiveActivityManager: ObservableObject {
   @Published var currentActivity: Activity<FoqosWidgetAttributes>?
 
   // Use AppStorage for persisting the activity ID across app launches
-  @AppStorage("com.foqos.currentActivityId") private var storedActivityId: String = ""
+  @AppStorage("org.zeroclicklabs.mindpower.currentActivityId") private var storedActivityId: String = ""
 
   static let shared = LiveActivityManager()
 

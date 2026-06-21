@@ -75,7 +75,7 @@
 
 /* Begin PBXFileReference section */
 		8017130A2DE6C78C00B77FE1 /* FoqosDeviceMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FoqosDeviceMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		801B20952CB363A10073E9E2 /* foqos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foqos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		801B20952CB363A10073E9E2 /* mindpower.zeroclicklabs.org */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindpower.zeroclicklabs.org; sourceTree = BUILT_PRODUCTS_DIR; };
 		801B20A62CB363A20073E9E2 /* foqosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foqosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		801B20B02CB363A20073E9E2 /* foqosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foqosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		803989B22CCC06D600E87F57 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -280,7 +280,7 @@
 		801B20962CB363A10073E9E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				801B20952CB363A10073E9E2 /* foqos.app */,
+				801B20952CB363A10073E9E2 /* mindpower.zeroclicklabs.org */,
 				801B20A62CB363A20073E9E2 /* foqosTests.xctest */,
 				801B20B02CB363A20073E9E2 /* foqosUITests.xctest */,
 				80FF388D2D80DB540032BC5E /* FoqosWidgetExtension.appex */,
@@ -352,7 +352,7 @@
 				80F674AA2D6185510056977F /* CodeScanner */,
 			);
 			productName = foqos;
-			productReference = 801B20952CB363A10073E9E2 /* foqos.app */;
+			productReference = 801B20952CB363A10073E9E2 /* mindpower.zeroclicklabs.org */;
 			productType = "com.apple.product-type.application";
 		};
 		801B20A52CB363A20073E9E2 /* foqosTests */ = {
@@ -629,7 +629,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosDeviceMonitor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosDeviceMonitor;
+				INFOPLIST_KEY_CFBundleDisplayName = MindPowerDeviceMonitor;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -638,7 +638,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.11;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqos.FoqosDeviceMonitor;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpower.MindPowerDeviceMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -662,7 +662,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosDeviceMonitor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosDeviceMonitor;
+				INFOPLIST_KEY_CFBundleDisplayName = MindPowerDeviceMonitor;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -671,7 +671,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.11;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqos.FoqosDeviceMonitor;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpower.MindPowerDeviceMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -820,7 +820,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = foqos/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Foqos;
+				INFOPLIST_KEY_CFBundleDisplayName = MindPower;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC to scan tags for item identification.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan QR codes to active/deactivate profiles";
@@ -839,7 +839,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 2.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqos;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -868,7 +868,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = foqos/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Foqos;
+				INFOPLIST_KEY_CFBundleDisplayName = MindPower;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC to scan tags for item identification.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan QR codes to active/deactivate profiles";
@@ -887,7 +887,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 2.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqos;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -911,14 +911,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 2.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqosTests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpowerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foqos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/foqos";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mindpower.zeroclicklabs.org/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/foqos";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -935,14 +935,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 2.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqosTests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpowerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foqos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/foqos";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mindpower.zeroclicklabs.org/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/foqos";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -958,7 +958,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 2.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqosUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpowerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -981,7 +981,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 2.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqosUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpowerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -1002,7 +1002,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosShieldConfig/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosShieldConfig;
+				INFOPLIST_KEY_CFBundleDisplayName = MindPowerShieldConfig;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1011,7 +1011,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqos.FoqosShieldConfig;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpower.MindPowerShieldConfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1030,7 +1030,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosShieldConfig/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosShieldConfig;
+				INFOPLIST_KEY_CFBundleDisplayName = MindPowerShieldConfig;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1039,7 +1039,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqos.FoqosShieldConfig;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpower.MindPowerShieldConfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1061,7 +1061,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = MindPowerWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1070,7 +1070,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqos.FoqosWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpower.MindPowerWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1091,7 +1091,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = MindPowerWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1100,7 +1100,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.foqos.FoqosWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zeroclicklabs.mindpower.MindPowerWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

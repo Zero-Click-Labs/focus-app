@@ -314,7 +314,7 @@ struct BlockedProfileStrictSafeguardsFields: View {
     CustomToggle(
       title: "Prevent App Deletion",
       description:
-        "Stop apps from being deleted during sessions, including Foqos.",
+        "Stop apps from being deleted during sessions, including MindPower.",
       isOn: $draft.enableStrictMode,
       isDisabled: disabled
     )
@@ -338,7 +338,7 @@ struct BlockedProfileSessionSafeguardsFields: View {
 
   var body: some View {
     CustomToggle(
-      title: "Require Foqos to Stop",
+      title: "Require MindPower to Stop",
       description:
         "Prevent this profile from being stopped by Shortcuts, NFC links, or QR links outside the app.",
       isOn: $draft.disableBackgroundStops,

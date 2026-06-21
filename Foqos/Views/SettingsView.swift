@@ -136,7 +136,7 @@ struct SettingsView: View {
             showDebugView = true
           }
 
-          Link(destination: URL(string: "https://www.foqos.app/blocking-native-apps.html")!) {
+          Link(destination: URL(string: "https://mindpower.zeroclicklabs.org/blocking-native-apps.html")!) {
             HStack {
               Text("Blocking Native Apps")
                 .foregroundColor(.primary)
@@ -153,6 +153,15 @@ struct SettingsView: View {
               Text("Reset Blocking State")
                 .foregroundColor(themeManager.themeColor)
             }
+          }
+        }
+
+        Section("Legal") {
+          NavigationLink {
+            AcknowledgementsView()
+          } label: {
+            Text("Acknowledgements")
+              .foregroundColor(.primary)
           }
         }
       }
@@ -182,10 +191,94 @@ struct SettingsView: View {
   }
 }
 
+private struct OpenSourceLicense: Identifiable {
+  let id = UUID()
+  let name: String
+  let copyright: String
+  let url: String
+}
+
+private let mitLicenseText = """
+Permission is hereby granted, free of charge, to any person obtaining a copy \
+of this software and associated documentation files (the "Software"), to deal \
+in the Software without restriction, including without limitation the rights \
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell \
+copies of the Software, and to permit persons to whom the Software is \
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all \
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE \
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, \
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \
+SOFTWARE.
+"""
+
+private let openSourceLicenses: [OpenSourceLicense] = [
+  OpenSourceLicense(
+    name: "Foqos",
+    copyright: "Copyright (c) 2024 Ali Waseem",
+    url: "https://github.com/awaseem/foqos"
+  ),
+  OpenSourceLicense(
+    name: "CodeScanner",
+    copyright: "Copyright (c) 2019 Paul Hudson",
+    url: "https://github.com/twostraws/CodeScanner"
+  ),
+]
+
+struct AcknowledgementsView: View {
+  var body: some View {
+    List {
+      Section {
+        Text(
+          "MindPower is built on the open-source Foqos project and other open-source software. We're grateful to their authors. A portion of MindPower's proceeds is contributed back to the original Foqos project."
+        )
+        .font(.callout)
+        .foregroundStyle(.secondary)
+      }
+
+      ForEach(openSourceLicenses) { license in
+        Section(license.name) {
+          Text(license.copyright)
+            .font(.subheadline.weight(.semibold))
+          Link(destination: URL(string: license.url)!) {
+            HStack {
+              Text("Source")
+                .foregroundColor(.primary)
+              Spacer()
+              Image(systemName: "arrow.up.right.square")
+                .foregroundColor(.secondary)
+            }
+          }
+          Text("MIT License")
+            .font(.footnote.weight(.semibold))
+            .foregroundStyle(.secondary)
+          Text(mitLicenseText)
+            .font(.footnote)
+            .foregroundStyle(.secondary)
+        }
+      }
+    }
+    .navigationTitle("Acknowledgements")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
 #Preview {
   SettingsView()
     .environmentObject(ThemeManager.shared)
     .environmentObject(RequestAuthorizer())
     .environmentObject(StrategyManager.shared)
     .modelContainer(for: BlockedProfiles.self, inMemory: true)
+}
+
+#Preview("Acknowledgements") {
+  NavigationStack {
+    AcknowledgementsView()
+  }
 }

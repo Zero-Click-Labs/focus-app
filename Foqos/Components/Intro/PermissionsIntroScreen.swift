@@ -71,7 +71,7 @@ struct PermissionsIntroScreen: View {
 
       // Message text
       VStack(spacing: 16) {
-        (Text("Foqos is 100% open source, ")
+        (Text("MindPower is 100% open source, ")
           + Text("read the code yourself")
           .foregroundColor(themeManager.themeColor)
           + Text(

@@ -54,7 +54,7 @@ struct SupportView: View {
 
       VStack(alignment: .leading, spacing: 16) {
         Text(
-          "Foqos started as a small attempt to make focus feel easier and more intentional. Every person who uses it, shares it, reviews it, or supports it helps keep that idea alive."
+          "MindPower started as a small attempt to make focus feel easier and more intentional. Every person who uses it, shares it, reviews it, or supports it helps keep that idea alive."
         )
 
         Text(

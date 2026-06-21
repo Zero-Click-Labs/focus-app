@@ -14,7 +14,7 @@ struct WelcomeIntroScreen: View {
     VStack(spacing: 0) {
       // Heading
       VStack(spacing: 8) {
-        Text("Welcome to Foqos")
+        Text("Welcome to MindPower")
           .font(.system(size: 34, weight: .bold))
           .foregroundColor(.primary)
           .opacity(showContent ? 1 : 0)
@@ -71,7 +71,7 @@ struct WelcomeIntroScreen: View {
           .rotationEffect(.degrees(orbitRotation + 270))
           .opacity(showIcons ? 1 : 0)
 
-        // Foqos sticker logo (center/sun)
+        // MindPower sticker logo (center/sun)
         Image("FoqosStickerLogo")
           .resizable()
           .scaledToFit()

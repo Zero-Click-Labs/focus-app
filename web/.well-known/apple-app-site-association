@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["TEAMID.org.zeroclicklabs.mindpower"],
+        "components": [
+          {
+            "/": "/profile/*",
+            "comment": "Opens a MindPower profile from an NFC tag / QR code / widget"
+          },
+          {
+            "/": "/navigate/*",
+            "comment": "Navigates to a profile without starting it"
+          }
+        ]
+      }
+    ]
+  }
+}

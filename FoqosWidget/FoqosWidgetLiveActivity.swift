@@ -69,7 +69,7 @@ struct FoqosWidgetLiveActivity: Widget {
         // Left side - App info
         VStack(alignment: .leading, spacing: 8) {
           HStack(spacing: 4) {
-            Text("Foqos")
+            Text("MindPower")
               .font(.headline)
               .fontWeight(.bold)
               .foregroundColor(.primary)
@@ -131,7 +131,7 @@ struct FoqosWidgetLiveActivity: Widget {
         foqosLogo(size: minimalLogoSize)
           .frame(width: minimalLogoSize, height: minimalLogoSize)
       }
-      .widgetURL(URL(string: "http://www.foqos.app"))
+      .widgetURL(URL(string: "http://mindpower.zeroclicklabs.org"))
       .keylineTint(Color.purple)
     }
   }
@@ -149,7 +149,7 @@ struct FoqosWidgetLiveActivity: Widget {
         .frame(width: expandedLogoSize, height: expandedLogoSize)
 
       VStack(alignment: .leading, spacing: 1) {
-        Text("Foqos")
+        Text("MindPower")
           .font(.system(size: 18, weight: .bold, design: .rounded))
           .foregroundColor(.primary)
           .lineLimit(1)

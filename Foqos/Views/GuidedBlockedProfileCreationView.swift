@@ -510,7 +510,7 @@ private struct GuidedProfileReviewContent: View {
     }
 
     if draft.disableBackgroundStops {
-      enabled.append("Foqos required to stop")
+      enabled.append("MindPower required to stop")
     }
 
     if !draft.enableEmergencyUnblock {

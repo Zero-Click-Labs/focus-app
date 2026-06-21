@@ -1,0 +1,84 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "MP100001",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "19.99",
+      "familyShareable" : false,
+      "internalID" : "MP000001",
+      "localizations" : [
+        {
+          "description" : "One-time purchase. Unlock all MindPower Pro features forever.",
+          "displayName" : "MindPower Pro (Lifetime)",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "org.zeroclicklabs.mindpower.pro.lifetime",
+      "referenceName" : "MindPower Pro Lifetime",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "",
+    "_developerTeamID" : "",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 0,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "MPGRP001",
+      "localizations" : [
+
+      ],
+      "name" : "MindPower Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "2.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "MP000002",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Full access to MindPower Pro, billed monthly.",
+              "displayName" : "MindPower Pro (Monthly)",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "org.zeroclicklabs.mindpower.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "MindPower Pro Monthly",
+          "subscriptionGroupID" : "MPGRP001",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
